@@ -43,12 +43,12 @@ const StepsSection = () => {
               key={step.id}
               className="relative group bg-white p-10 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300"
             >
-              {/* Step Number (Top Right) */}
+            
               <div className="absolute top-5 right-5 bg-[#7F3EFF] text-white text-xs font-bold w-8 h-8 flex items-center justify-center rounded-full">
                 {step.id}
               </div>
 
-              {/* Image Icon Section */}
+              
               <div className="bg-purple-50 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform overflow-hidden p-4">
                 <img
                   src={step.imageLink}
