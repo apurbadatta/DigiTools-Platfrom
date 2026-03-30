@@ -28,8 +28,8 @@ const StepsSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gray-50/50">
-      <div className="max-w-7xl mx-auto text-center">
+    <section className="py-20 px-6 ">
+      <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-4xl font-extrabold text-[#1E293B] mb-4">
           Get Started In 3 Steps
         </h2>
@@ -43,12 +43,10 @@ const StepsSection = () => {
               key={step.id}
               className="relative group bg-white p-10 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300"
             >
-            
               <div className="absolute top-5 right-5 bg-[#7F3EFF] text-white text-xs font-bold w-8 h-8 flex items-center justify-center rounded-full">
                 {step.id}
               </div>
 
-              
               <div className="bg-purple-50 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform overflow-hidden p-4">
                 <img
                   src={step.imageLink}
