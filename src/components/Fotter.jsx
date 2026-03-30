@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram,FaTwitter } from 'react-icons/fa';
 const Fotter = () => {
     return (
        <footer className="bg-[#0F172A] text-white py-10 px-4 md:px-20">
-  <div className="max-w-5xl mx-auto grid  md:grid-cols-4 gap-6 md:gap-6">
+  <div className="max-w-5xl mx-auto grid  md:grid-cols-4 gap-6 md:gap-6 text-center">
     
     {/* 1. Brand Section */}
     <div className="space-y-6">
@@ -46,17 +46,17 @@ const Fotter = () => {
         <li><a href="#" className="hover:text-white transition">Contact</a></li>
       </ul>
       
-      <h4 className="text-lg font-bold mb-2">Social Links</h4>
-      <div className="flex space-x-4">
-        {/* Instagram Icon */}
+      <h4 className="text-lg font-bold mb-2 ">Social Links</h4>
+      <div className="flex space-x-4 justify-center">
+      
         <div className="bg-white text-[#0F172A] p-2 rounded-full cursor-pointer hover:bg-gray-200">
           <FaInstagram></FaInstagram>
         </div>
-        {/* Facebook Icon */}
+       
         <div className="bg-white text-[#0F172A] p-2 rounded-full cursor-pointer hover:bg-gray-200">
           <FaFacebook/>
         </div>
-        {/* Twitter/X Icon */}
+       
         <div className="bg-white text-[#0F172A] p-2 rounded-full cursor-pointer hover:bg-gray-200">
            <FaTwitter/>
         </div>
