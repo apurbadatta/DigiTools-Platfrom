@@ -1,5 +1,5 @@
 import React from "react";
-import Shoppingcart from "../assets/products/shopping-cart.png";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Navber = () => {
   return (
@@ -34,8 +34,7 @@ const Navber = () => {
           </li>
         </ul>
         <div className="flex items-center space-x-6">
-          <img className="" src={Shoppingcart} alt="Shoppingcart" />
-
+          <FaShoppingCart/>
           <a
             href="#login"
             className="text-gray-700 font-medium hover:text-black"

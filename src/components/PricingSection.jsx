@@ -12,7 +12,7 @@ const PricingSection = () => {
 
       <div className="max-w-5xl mx-auto grid  md:grid-cols-3 gap-8 items-center">
        
-        <div className="bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-sm text-left hover:shadow-md transition">
+        <div className="bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-sm text-left hover:shadow-lg transition">
           <h3 className="text-2xl font-bold">Starter</h3>
           <p className="text-gray-500 text-sm mb-6">
             Perfect for getting started
@@ -31,7 +31,7 @@ const PricingSection = () => {
             Get Started Free
           </button>
         </div>
-        <div className="bg-[#7F3EFF] p-10 rounded-[2.5rem] text-white text-left relative shadow-2xl scale-105 z-10">
+        <div className="bg-[#7F3EFF] p-10 rounded-[2.5rem] text-white text-left relative shadow-2xl z-10 hover:shadow-lg">
           <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#FEF3C6] text-[#BB4D00] px-4 py-1 rounded-full text-xs font-black uppercase ">
             Most Popular
           </div>
@@ -53,7 +53,7 @@ const PricingSection = () => {
           </button>
         </div>
 
-        <div className="bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-sm text-left hover:shadow-md transition">
+        <div className="bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-sm text-left hover:shadow-lg transition">
           <h3 className="text-2xl font-bold">Enterprise</h3>
           <p className="text-gray-500 text-sm mb-6">For teams and businesses</p>
           <div className="mb-8">

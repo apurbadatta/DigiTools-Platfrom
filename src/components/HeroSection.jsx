@@ -30,7 +30,7 @@ const HeroSection = () => {
               Explore Products
             </button>
 
-            <button className="w-full sm:w-auto flex items-center justify-center gap-2 border-2 border-purple-200 text-[#7F3EFF] px-8 py-4 rounded-full font-bold hover:bg-purple-50 transition cursor-pointer">
+            <button className="w-full sm:w-auto flex items-center justify-center gap-2 border-2 border-purple-200 text-[#7F3EFF] px-8 py-4 rounded-full font-bold hover:bg-purple-200 transition cursor-pointer">
               <img src={PlayPng} alt="PlayPng" />
               Watch Demo
             </button>
