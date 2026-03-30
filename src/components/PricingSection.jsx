@@ -3,7 +3,7 @@ import React from "react";
 const PricingSection = () => {
   return (
     <section className="py-18 px-6 text-center">
-      <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-4">
+      <h2 className="text-3xl md:text-4xl text-black mb-4">
         Simple, Transparent Pricing
       </h2>
       <p className="text-gray-500 mb-16">
@@ -13,12 +13,12 @@ const PricingSection = () => {
       <div className="max-w-5xl mx-auto grid  md:grid-cols-3 gap-8 items-center">
        
         <div className="bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-sm text-left hover:shadow-lg transition">
-          <h3 className="text-2xl font-bold">Starter</h3>
+          <h3 className="text-2xl font-bold text-black ">Starter</h3>
           <p className="text-gray-500 text-sm mb-6">
             Perfect for getting started
           </p>
           <div className="mb-8">
-            <span className="text-5xl font-black">$0</span>
+            <span className="text-5xl text-black">$0</span>
             <span className="text-gray-400">/Month</span>
           </div>
           <ul className="space-y-4 mb-10 text-gray-600">
@@ -54,10 +54,10 @@ const PricingSection = () => {
         </div>
 
         <div className="bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-sm text-left hover:shadow-lg transition">
-          <h3 className="text-2xl font-bold">Enterprise</h3>
+          <h3 className="text-2xl font-bold text-black ">Enterprise</h3>
           <p className="text-gray-500 text-sm mb-6">For teams and businesses</p>
           <div className="mb-8">
-            <span className="text-5xl font-black">$99</span>
+            <span className="text-5xl text-black">$99</span>
             <span className="text-gray-400">/Month</span>
           </div>
           <ul className="space-y-4 mb-10 text-gray-600">

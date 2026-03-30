@@ -8,7 +8,7 @@ const StepsSection = () => {
       description:
         "Sign up for free in seconds. No credit card required to get started.",
 
-      imageLink: "https://i.ibb.co.com/Jjrc0nNG/user.png",
+      imageLink: "https://i.ibb.co.com/FkLbmPkn/user.png",
     },
     {
       id: "02",
@@ -30,7 +30,7 @@ const StepsSection = () => {
   return (
     <section className="py-20 px-6 ">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-4xl font-extrabold text-[#1E293B] mb-4">
+        <h2 className="text-4xl font-extrabold text-black mb-4">
           Get Started In 3 Steps
         </h2>
         <p className="text-gray-500 mb-16 max-w-lg mx-auto">
@@ -55,7 +55,7 @@ const StepsSection = () => {
                 />
               </div>
 
-              <h3 className="text-2xl font-bold text-[#1E293B] mb-4">
+              <h3 className="text-2xl font-bold text-black mb-4">
                 {step.title}
               </h3>
               <p className="text-gray-500 leading-relaxed">
