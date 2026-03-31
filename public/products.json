@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ],
+    "icon": "📝"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "2000+ templates",
+      "Monthly updates",
+      "Commercial license"
+    ],
+    "icon": "🎨"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "10M+ assets",
+      "Commercial use",
+      "No attribution"
+    ],
+    "icon": "📷"
+  },
+  {
+    "id": 4,
+    "name": "SEO Optimizer Tool",
+    "description": "Rank your website higher on Google with our advanced keyword research and audit tools.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "popular",
+    "features": [
+      "Keyword tracker",
+      "Backlink analysis",
+      "Weekly SEO reports"
+    ],
+    "icon": "🚀"
+  },
+  {
+    "id": 5,
+    "name": "Video Editor Cloud",
+    "description": "Edit professional videos directly in your browser with cloud rendering power.",
+    "price": 199,
+    "period": "yearly",
+    "tag": "Best Value",
+    "tagType": "best-seller",
+    "features": [
+      "4K Export",
+      "Stock music library",
+      "Team collaboration"
+    ],
+    "icon": "🎬"
+  },
+  {
+    "id": 6,
+    "name": "Resume Builder AI",
+    "description": "Create a professional, job-winning resume in minutes with AI-powered suggestions.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "ATS optimization",
+      "10+ Pro templates",
+      "Export to PDF"
+    ],
+    "icon": "📄"
+  },
+  {
+    "id": 7,
+    "name": "Email Marketing Kit",
+    "description": "Send beautiful newsletters and automate your sales funnel with ease.",
+    "price": 45,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Drag-and-drop editor",
+      "A/B testing",
+      "Analytics dashboard"
+    ],
+    "icon": "📧"
+  },
+  {
+    "id": 8,
+    "name": "Social Media Scheduler",
+    "description": "Schedule your posts across all platforms from a single dashboard.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "Save 20%",
+    "tagType": "best-seller",
+    "features": [
+      "Auto-posting",
+      "Hashtag generator",
+      "Engagement tracking"
+    ],
+    "icon": "📱"
+  },
+  {
+    "id": 9,
+    "name": "Cyber Security Scanner",
+    "description": "Protect your website from threats with real-time vulnerability scanning.",
+    "price": 59,
+    "period": "monthly",
+    "tag": "Top Rated",
+    "tagType": "popular",
+    "features": [
+      "Malware removal",
+      "SSL monitoring",
+      "24/7 Support"
+    ],
+    "icon": "🛡️"
+  }
+]

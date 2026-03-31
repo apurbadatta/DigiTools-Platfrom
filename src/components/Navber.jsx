@@ -1,7 +1,7 @@
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
 
-const Navber = () => {
+const Navber = ({ cartCount }) => {
   return (
     <div>
       <nav className="flex items-center justify-between px-10 py-4 bg-white border-b border-gray-100 font-sans">
@@ -34,7 +34,21 @@ const Navber = () => {
           </li>
         </ul>
         <div className="flex items-center space-x-6">
-          <FaShoppingCart/>
+
+          <div className="relative cursor-pointer">
+          <FaShoppingCart className="text-2xl text-gray-700" />
+          {cartCount > 0 && (
+            <span className="absolute -top-2 -right-2 bg-[#7F3EFF] text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full border-2 border-white">
+              {cartCount}
+            </span>
+          )}
+        </div>
+
+
+          
+
+
+
           <a
             href="#login"
             className="text-gray-700 font-medium hover:text-black"
