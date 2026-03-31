@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 
 const ProductSection = ({ cart, setCart }) => {
   const [products, setProducts] = useState([]);
@@ -16,7 +17,7 @@ const ProductSection = ({ cart, setCart }) => {
     const isExist = cart.find((item) => item.id === product.id);
     if (!isExist) {
       setCart([...cart, product]);
-      alert(`✅ ${product.name} added to cart!`);
+      toast.success("Item added to card");
     }
   };
 
@@ -24,12 +25,12 @@ const ProductSection = ({ cart, setCart }) => {
   const handleRemoveFromCart = (id, name) => {
     const remainingCart = cart.filter((item) => item.id !== id);
     setCart(remainingCart);
-    alert(`🗑️ ${name} has been removed from your cart.`);
+    toast.info(`${name} has been removed from your cart.`);
   };
 
   
   const handleCheckout = () => {
-    alert("🎉 Order Placed Successfully!");
+    toast.success("Order Placed Successfully!");
     setCart([]); 
     setActiveTab("products");
   };
