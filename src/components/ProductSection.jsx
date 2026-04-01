@@ -4,15 +4,13 @@ import { toast } from "react-toastify";
 
 const ProductSection = ({ cart, setCart }) => {
   const [products, setProducts] = useState([]);
-  const [activeTab, setActiveTab] = useState("products"); 
+  const [activeTab, setActiveTab] = useState("products");
 
-  
   useEffect(() => {
     fetch("/products.json")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
-
 
   const handleAddToCart = (product) => {
     const isExist = cart.find((item) => item.id === product.id);
@@ -22,17 +20,15 @@ const ProductSection = ({ cart, setCart }) => {
     }
   };
 
- 
   const handleRemoveFromCart = (id, name) => {
     const remainingCart = cart.filter((item) => item.id !== id);
     setCart(remainingCart);
     toast.info(`${name} has been removed from your cart.`);
   };
 
-  
   const handleCheckout = () => {
     toast.success("Order Placed Successfully!");
-    setCart([]); 
+    setCart([]);
     setActiveTab("products");
   };
 
@@ -94,8 +90,8 @@ const ProductSection = ({ cart, setCart }) => {
                         product.tagType === "best-seller"
                           ? "bg-orange-100 text-orange-600"
                           : product.tagType === "popular"
-                          ? "bg-purple-100 text-[#7F3EFF]"
-                          : "bg-green-100 text-green-600"
+                            ? "bg-purple-100 text-[#7F3EFF]"
+                            : "bg-green-100 text-green-600"
                       }`}
                     >
                       {product.tag}
@@ -115,6 +111,18 @@ const ProductSection = ({ cart, setCart }) => {
                       <span className="text-sm text-gray-400 font-normal">
                         /{product.period === "one-time" ? "Once" : "Mo"}
                       </span>
+                    </div>
+                    <div className="pb-2">
+                      <ul className="mt-6 flex flex-col gap-2 text-xs">
+                        {product.features.map((feature, index) => (
+                          <li key={index} className="text-green-600 text-xl">✔
+                            
+                            <span className="text-[#627382] text-sm">
+                              {feature}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
 
@@ -140,7 +148,9 @@ const ProductSection = ({ cart, setCart }) => {
           <div className="py-10">
             {cart.length === 0 ? (
               <div className="bg-gray-50 rounded-[3rem] py-15 px-6 border-2 border-dashed border-gray-200 flex flex-col items-center">
-                <div className="text-6xl mb-6 "><FaShoppingCart/></div>
+                <div className="text-6xl mb-6 ">
+                  <FaShoppingCart />
+                </div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-2">
                   Your cart is empty!
                 </h3>
