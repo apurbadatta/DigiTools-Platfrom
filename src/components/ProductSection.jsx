@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FaShoppingCart } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 const ProductSection = ({ cart, setCart }) => {
@@ -54,7 +55,7 @@ const ProductSection = ({ cart, setCart }) => {
           <div className="bg-gray-100 p-1.5 rounded-full flex items-center shadow-inner">
             <button
               onClick={() => setActiveTab("products")}
-              className={`px-8 py-2.5 rounded-full font-bold transition-all duration-300 ${
+              className={`px-8 py-2.5 rounded-full font-bold transition-all duration-300 cursor-pointer ${
                 activeTab === "products"
                   ? "bg-[#7F3EFF] text-white shadow-lg"
                   : "text-gray-500 hover:text-[#7F3EFF]"
@@ -64,7 +65,7 @@ const ProductSection = ({ cart, setCart }) => {
             </button>
             <button
               onClick={() => setActiveTab("cart")}
-              className={`px-8 py-2.5 rounded-full font-bold transition-all duration-300 ${
+              className={`px-8 py-2.5 rounded-full font-bold transition-all duration-300 cursor-pointer ${
                 activeTab === "cart"
                   ? "bg-[#7F3EFF] text-white shadow-lg"
                   : "text-gray-500 hover:text-[#7F3EFF]"
@@ -122,8 +123,8 @@ const ProductSection = ({ cart, setCart }) => {
                     onClick={() => handleAddToCart(product)}
                     className={`w-full py-4 rounded-2xl font-bold transition ${
                       isInCart
-                        ? "bg-gray-200 text-gray-500 cursor-not-allowed"
-                        : "bg-[#7F3EFF] text-white group-hover:scale-105 shadow-md"
+                        ? "bg-gray-200 text-gray-500 cursor-not-allowed "
+                        : "bg-[#7F3EFF] text-white group-hover:scale-105 shadow-md cursor-pointer"
                     }`}
                   >
                     {isInCart ? "Added to Cart" : "Buy Now"}
@@ -138,17 +139,14 @@ const ProductSection = ({ cart, setCart }) => {
         {activeTab === "cart" && (
           <div className="py-10">
             {cart.length === 0 ? (
-              <div className="bg-gray-50 rounded-[3rem] py-20 px-6 border-2 border-dashed border-gray-200">
-                <div className="text-6xl mb-6">🛒</div>
+              <div className="bg-gray-50 rounded-[3rem] py-15 px-6 border-2 border-dashed border-gray-200 flex flex-col items-center">
+                <div className="text-6xl mb-6 "><FaShoppingCart/></div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-2">
                   Your cart is empty!
                 </h3>
-                <p className="text-gray-500 mb-8">
-                  It looks like you haven't added any tools to your cart yet.
-                </p>
                 <button
                   onClick={() => setActiveTab("products")}
-                  className="bg-[#7F3EFF] text-white px-10 py-3 rounded-xl font-bold hover:bg-[#6a32d9] transition"
+                  className="bg-[#7F3EFF] text-white px-10 py-3 rounded-xl font-bold hover:bg-[#6a32d9] transition cursor-pointer"
                 >
                   Browse Products
                 </button>
@@ -171,7 +169,7 @@ const ProductSection = ({ cart, setCart }) => {
                     </div>
                     <button
                       onClick={() => handleRemoveFromCart(item.id, item.name)}
-                      className="text-red-500 font-bold hover:bg-red-50 px-4 py-2 rounded-xl transition"
+                      className="text-red-500 font-bold hover:bg-red-50 px-4 py-2 rounded-xl transition cursor-pointer"
                     >
                       Remove
                     </button>
@@ -187,7 +185,7 @@ const ProductSection = ({ cart, setCart }) => {
                   </div>
                   <button
                     onClick={handleCheckout}
-                    className="bg-[#7F3EFF] text-white px-10 py-4 rounded-2xl font-bold shadow-lg hover:bg-[#6a32d9] transition"
+                    className="bg-[#7F3EFF] text-white px-10 py-4 rounded-2xl font-bold shadow-lg hover:bg-[#6a32d9] transition cursor-pointer"
                   >
                     Checkout Now
                   </button>
